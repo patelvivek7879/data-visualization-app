@@ -1,6 +1,7 @@
-@tailwind base;
+/* @tailwind base; */
 @tailwind components;
 @tailwind utilities;
+@import 'antd/dist/reset.css';
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -35,4 +36,9 @@ body {
   color: #eee;
   font-size: 22px;
   font-weight: 600;
+}
+
+#a_unique_id-container{
+  height: 98% !important;
+  padding: 8px !important;
 }

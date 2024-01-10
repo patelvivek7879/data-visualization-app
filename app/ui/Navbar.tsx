@@ -1,9 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import { Menu, Layout, Typography } from "antd";
+import { Menu, Layout, Typography, Button } from "antd";
 import {
   AppstoreOutlined,
+  InfoCircleOutlined,
+  InfoOutlined,
   MailOutlined,
   SettingOutlined,
 } from "@ant-design/icons";
@@ -45,6 +47,9 @@ const Navbar = () => {
     <Header className="flex justify-between items-center" style={{alignItems: 'center'}}>
       <div className="logo">
         Data Visualization Tool
+        </div>
+        <div className="flex justify-center">
+            <Button type="text" icon={<InfoCircleOutlined style={{fontSize: 24, color: '#eee'}} />} />
         </div>
     </Header>
   );
